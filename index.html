@@ -5,9 +5,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mokoena</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+     <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Mokoena</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li>
+          <button class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content fade-in">
+      <img src="https://via.placeholder.com/250" alt="Your Profile Image">
+      <h1>Tshepiso Mokoena</h1>
+      <p>Full-Stack Developer</p>
+      <a href="#contact">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="fade-in">About Me</h2>
+      <p class="fade-in">
+        I'm a full-stack developer building web applications from front to back. I specialize in creating responsive front-ends with React and robust back-ends with Node.js and MongoDB, delivering seamless and efficient solutions.
+      </p>
+      <!-- Stack -->
+      <h3 class="fade-in">My Stack</h3>
+      <div class="stack-grid">
+        <div class="stack-item fade-in">
+          <i class="fab fa-html5"></i>
+          <span>HTML</span>
+        </div>
+        <div class="stack-item fade-in">
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS</span>
+        </div>
+        <div class="stack-item fade-in">
+          <i class="fab fa-js-square"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="stack-item fade-in">
+          <i class="fa-brands fa-figma"></i>
+          <span>Figma</span>
+        </div>
+        <div class="stack-item fade-in">
+          <i class="fab fa-bootstrap"></i>
+          <span>Bootstrap</span>
+        </div>
+        <div class="stack-item fade-in">
+          <i class="fas fa-code"></i>
+          <span>TypeScript</span>
+        </div>
+        <div class="stack-item fade-in">
+          <i class="fab fa-angular"></i>
+          <span>Angular</span>
+        </div>
+        <div class="stack-item fade-in">
+          <i class="fab fa-python"></i>
+          <span>Python</span>
+        </div>
+        <div class="stack-item fade-in">
+          <i class="fas fa-flask"></i>
+          <span>Flask</span>
+        </div>
+        <div class="stack-item fade-in">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </div>
+        <div class="stack-item fade-in">
+          <i class="fa-brands fa-git-alt"></i>
+          <span>Git</span>
+        </div>
+        <div class="stack-item fade-in">
+          <i class="fa-brands fa-trello"></i>
+          <span>Trello</span>
+        </div>
+        <div class="stack-item fade-in">
+          <i class="fas fa-plug"></i>
+          <span>Restful APIs</span>
+        </div>
+      </div>
+      <!-- Experience -->
+      <h3 class="fade-in">My Journey</h3>
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-content">
+            <h3>Full-Stack Developer - CodeWave</h3>
+            <div class="date">2022 - Present</div>
+            <p>Developed a full-stack e-commerce platform using React, Node.js, and MongoDB, increasing client revenue by 40% with optimized APIs and responsive UI.</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-content">
+            <h3>Full-Stack Developer - NextGen Tech</h3>
+            <div class="date">2020 - 2022</div>
+            <p>Built scalable web apps with React and Express, improving user engagement by 25% through real-time features and RESTful API integrations.</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-content">
+            <h3>Junior Full-Stack Developer - StartWeb</h3>
+            <div class="date">2018 - 2020</div>
+            <p>Crafted responsive front-ends with HTML, CSS, and JavaScript, and supported Node.js back-ends, enhancing client satisfaction by 15% with a custom CMS.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Qualifications -->
+      <h3 class="fade-in">My Academic Journey</h3>
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-content">
+            <h3>B.Sc. Computer Science - Tech University</h3>
+            <div class="date">2014 - 2018</div>
+            <p>Graduated with honors, focusing on software engineering, database systems, and web development, building a strong foundation in full-stack technologies.</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-content">
+            <h3>Full-Stack Development Bootcamp - CodeAcademy</h3>
+            <div class="date">2017</div>
+            <p>Completed an intensive program mastering React, Node.js, and MongoDB, with hands-on projects in building scalable web applications.</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-content">
+            <h3>Certified Web Developer - Online Certification</h3>
+            <div class="date">2016</div>
+            <p>Earned a certification in HTML, CSS, and JavaScript, gaining practical skills in creating responsive and dynamic websites.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="fade-in">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card fade-in">
+          <img src="https://via.placeholder.com/400x200" alt="Project 1">
+          <div class="content">
+            <h3>E-Commerce Platform</h3>
+            <p>A full-stack online store built with React, Node.js, and MongoDB, designed for performance and scalability.</p>
+            <a href="#">View Project</a>
+          </div>
+        </div>
+        <div class="project-card fade-in">
+          <img src="https://via.placeholder.com/400x200" alt="Project 2">
+          <div class="content">
+            <h3>Portfolio Builder</h3>
+            <p>A full-stack app for creating professional portfolios with real-time data integration.</p>
+            <a href="#">View Project</a>
+          </div>
+        </div>
+        <div class="project-card fade-in">
+          <img src="https://via.placeholder.com/400x200" alt="Project 3">
+          <div class="content">
+            <h3>Task Manager</h3>
+            <p>A collaborative full-stack app with React front-end and Node.js back-end for real-time task management.</p>
+            <a href="#">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="fade-in">Get in Touch</h2>
+      <p class="fade-in">Ready to build something? Drop me a message!</p>
+      <form class="fade-in" id="contact-form" action="https://formspree.io/f/xanokrdl" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="social-links fade-in">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="popup" id="success-popup">
+        <div class="popup-content">
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. I'll get back to you soon!</p>
+          <button onclick="closePopup()">Close</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Tshepiso Mokoena. All rights reserved.</p>
+  </footer>
+
     
 </body>
 </html>
